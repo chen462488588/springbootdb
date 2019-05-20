@@ -13,3 +13,16 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.StdDateFormat
+    time-zone: GMT+8
+    joda-date-time-format: yyyy-MM-dd
+  thymeleaf:
+    cache: false
+    encoding: utf-8
+    content-type: text/html
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+logging:
+  config: classpath:log4j2.xml

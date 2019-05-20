@@ -1,7 +1,7 @@
 package com.chen.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import org.springframework.format.annotation.DateTimeFormat;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -18,7 +18,8 @@ public class User implements Serializable {
 
     private String name;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    //    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy年MM月dd日 HH时mm分ss秒", timezone = "GMT+8")
     private Date createDate;
 
     @ManyToOne
