@@ -6,7 +6,7 @@
     <modules>
         <module>redis</module>
         <module>mysql</module>
-      <module>testspring</module>
+        <module>testspring</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&&serverTimezone=UTC
     username: root
     password: root
   jpa:
@@ -24,5 +24,21 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     mode: LEGACYHTML5
+  mail:
+    username: 462488588@qq.com
+    password: qhkrircphnupbhhh
+    default-encoding: utf-8
+    host: smtp.qq.com
+    properties:
+      smtp:
+        starttls:
+          enable: true
+          required: true
+        mail:
+          smtp:
+            auth: true
+
 logging:
   config: classpath:log4j2.xml
+
+
