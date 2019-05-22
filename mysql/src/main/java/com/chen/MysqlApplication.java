@@ -23,11 +23,10 @@ public class MysqlApplication {
 //            sendMailService.sendMail(user);
 //        }
     public static void main(String[] args) {
-        List<User> user = new UserServiceImpl().findAll();
 
         SpringApplication.run(MysqlApplication.class, args);
         System.out.println(222);
-        Logger logger =  LogManager.getLogger(MysqlApplication.class);
+        Logger logger = LogManager.getLogger(MysqlApplication.class);
         logger.warn("warn..........");
         logger.error("error.......");
         logger.debug("debug........");
